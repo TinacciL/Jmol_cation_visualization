@@ -1,0 +1,13 @@
+2
+SiO+_2 (2-SG / C*V)
+Si     0.000000     0.000000     0.554244
+ O     0.000000     0.000000    -0.969926
+
+-------- ENERGY AND PROPERTIES --------
+
+ Rotational constants:       0.0000000       21.3768266       21.3768266 GHz
+
+ EROCCSD(T)/aug-cc-pVTZ = -364.294176228 Eh
+
+ MU_X      MU_Y      MU_Z       MU
+ 0.000    0.000    4.667    4.667
