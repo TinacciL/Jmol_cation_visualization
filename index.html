@@ -22,10 +22,7 @@
 <body font-family: "Computer Modern";>
 <p> </p>
 <p align=center><span style="font-size: 200%;"><strong>Structures and Properties of Known and Postulated ISM Cations</strong></span></p>
-<p align=center>Click on the specie to display on the Jmol applet and below the .xyz file</p>
-
-
-
+<p align=center>Click on the species to display on the Jmol applet, and start to use Jmol, and below the .xyz file with all the info.</p>
 
 <div style="display:block; width:100%;">
       <div style="width:70%; float: left; display: inline-block;">
@@ -580,7 +577,7 @@
             </tr>
             <tr>
             <td>&nbsp;</td>
-            <td><a href="#" onclick="load_xyz('molecules/HS2+_1.txt');jmolScript('load molecules/HS2+_1.xyz');" style="text-decoration:none">HS<sub>2</sub>+</a></td>
+            <td><a href="#" onclick="load_xyz('molecules/HS2+_1.txt');jmolScript('load molecules/HS2+_1.xyz');jmolScript('rotate BEST');" style="text-decoration:none">HS<sub>2</sub>+</a></td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -602,6 +599,7 @@
                   var molecola = localStorage.getItem("molecola");
                   if(molecola != '' && molecola != null)
                         jmolScript(molecola);
+                        jmolScript("");
             </script>
              <div><p> </p></div>
             <div id="load_xyz"> </div>
