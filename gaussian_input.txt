@@ -1,0 +1,39 @@
+
+%nosave
+%chk=input
+#P ROM062X/cc-pvtz opt freq
+
+ Input format for CH4+
+
+1 2
+ C     0.000000     0.000000     0.107948
+ H     0.000000     0.564658    -0.934799
+ H     0.957202    -0.000000     0.610955
+ H    -0.957202     0.000000     0.610955
+ H    -0.000000    -0.564658    -0.934799
+
+
+--link1--
+%nosave
+%chk=input
+#P ROCCSD(T)/aug-cc-pvtz guess=read geom=AllCheckpoint
+
+*********************************************************
+*********************************************************
+
+%nosave
+%chk=input
+#P M062X/cc-pvtz opt freq
+
+ Input format for H3+
+
+1 1
+ H     0.000000     0.502520     0.000000
+ H    -0.435195    -0.251260     0.000000
+ H     0.435195    -0.251260     0.000000
+
+
+--link1--
+%nosave
+%chk=input
+#P CCSD(T)/aug-cc-pvtz guess=read geom=AllCheckpoint stable=opt
