@@ -25,9 +25,21 @@
 <p align=center>Click on the species to display on the Jmol applet, and start to use Jmol, and below the .xyz file with all the info. To see the Gaussian16 input used to compute this species go <a href="gaussian.html">here</a>.</p>
 
 <div style="display:block; width:100%;">
+      <div>
+            <script type="text/javascript">
+                  var script="background lavander";
+                  jmolApplet(400, script);
+                  var molecola = localStorage.getItem("molecola");
+                  if(molecola != '' && molecola != null)
+                        jmolScript(molecola);
+                        jmolScript("");
+            </script>
+             <div><p> </p></div>
+            <div id="load_xyz"> </div>
+      </div>
       <div style="width:70%; float: left; display: inline-block;overflow: auto;">
             <p align="left"><strong></strong></p>
-            <table border="0" cellspacing="0" cellpadding="0" align="left" width="40%" padding:"0" margin:"0">
+            <table border="0" cellspacing="5" cellpadding="5" align="center" width="80%">
             <tbody>
             <tr>
             <th>2 atoms</th>
@@ -592,18 +604,7 @@
             </table>
       </div>
       <div style="width:30%; float: right; display: inline-block;">
-            <div>
-            <script type="text/javascript">
-                  var script="background lavander";
-                  jmolApplet(400, script);
-                  var molecola = localStorage.getItem("molecola");
-                  if(molecola != '' && molecola != null)
-                        jmolScript(molecola);
-                        jmolScript("");
-            </script>
-             <div><p> </p></div>
-            <div id="load_xyz"> </div>
-            </div>
+            
       </div>
 </div>
 
